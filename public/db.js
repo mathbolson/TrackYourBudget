@@ -1,13 +1,16 @@
+
 const indexedDB = window.indexedDB || 
 window.mozIndexedDB || 
 window.webkitIndexedDB ||
 window.msIndexedDB;
 
 let db;
+
 const request = indexedDB.open("budget", 1);
 
 
 request.onupgradeneeded = function (event) {
+    
     const db = event.target.result;
     db.createObjectStore("pending", { 
         keyPath: "id",

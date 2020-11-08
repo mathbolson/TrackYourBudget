@@ -15,7 +15,7 @@ const FILES_TO_CACHE = [
 ];
 
 
-const iconSizes = [ "192", "512"];
+const iconSizes = ["72", "96", "128", "144", "152", "192", "384", "512"];
 const iconFiles = iconSizes.map(
   (size) => `/icons/icon-${size}x${size}.png`
 );
